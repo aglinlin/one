@@ -1,2 +1,2 @@
-# image_store
+# image
 圖床
