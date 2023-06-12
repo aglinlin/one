@@ -108,9 +108,9 @@ body {
   <div class="view-container">
     <iframe id="viewer"></iframe>
   </div>
-  <script src="surf.js"></script>
+  <script src="js/surf.js"></script>
   <script>
-  fetch('surf.json')
+  fetch('js/surf.json')
     .then(res => res.json())
     .then(data => {
       Surf.init(data)
