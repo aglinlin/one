@@ -69,7 +69,7 @@ body {
   background-color: #7DA394;
 }
 .view-container {
-  height: 330px;
+  height: 91%;
 }
 .view-container iframe {
   height: 100%;
@@ -116,7 +116,8 @@ fetch('https://api.github.com/repos/aglinlin/one/issues/1')
   .then(res => res.json())
   .then(data =>
     toObject(
-      data.body.replace(/`/g, '').replace(/\n/g, '')  
+      data.body.replace(/`/g, '').replace(/\n/g, '')  // 注意这里要从 data.description 改成 data.body
+    )
   )
   .then(data => {
     init(data)
@@ -175,5 +176,3 @@ function rand (n) {
 
 </body>
 </html>
-
-
